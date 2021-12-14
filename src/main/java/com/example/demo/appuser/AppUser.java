@@ -16,7 +16,7 @@ import java.util.Collections;
 @EqualsAndHashCode
 @NoArgsConstructor
 @Entity
-public class AppUser implements AppUserss {
+public class AppUser implements UserDetails, AppUserGetter {
 
     @SequenceGenerator(
             name = "student_name",
